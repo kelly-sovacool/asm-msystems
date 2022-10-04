@@ -1,5 +1,5 @@
-title: Article Format Template
-author: Christophe Dervieux
+title: ASM mSystems Template
+author: Kelly Sovacool
 version: 0.1.0
 contributes:
   formats:
@@ -16,13 +16,13 @@ contributes:
           echo: false
     pdf:
       # define default configuration for the pdf version of your format
-      documentclass: aft
+      documentclass: asm
       colorlinks: true
-      urlcolor: red
+      urlcolor: blue
       fig-width: 6.5
       fig-height: 4.5
       # This format use a bst file with natbib
-      biblio-style: te
+      biblio-style: msystems
       cite-method: natbib
       # Set this below (`biblio-config: false`) if your cls already load a bst file
       # biblio-config: false
@@ -36,12 +36,15 @@ contributes:
         - "partials/_authors.tex"
       format-resources:
         # Add here the resources required for the PDF rendering
-        - aft.cls
-        - te.bst
+        - asm.cls
+        - msystems.bst
+        - jabbrv.sty
+        - jabbrv-ltwa-all.ldf
+        - jabbrv-ltwa-en.ldf
     html:
       # define default configuration for the html version of your format
-      number-sections: true
+      number-sections: false
       toc: true
       theme: custom.scss
       # Use a CSL file to style (https://www.zotero.org/styles/)
-      csl: https://www.zotero.org/styles/journal-of-institutional-and-theoretical-economics
+      csl: https://www.zotero.org/styles/american-society-for-microbiology
