@@ -9,14 +9,19 @@ $-- %%%%%%%%%%%%%%%%
 $if(title)$
 \title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
 $endif$
-$if(subtitle)$
-\usepackage{etoolbox}
-\makeatletter
-\providecommand{\subtitle}[1]{% add subtitle to \maketitle
-  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+\author{${by-author:_authors.tex()[\and]}}
+\author{%
+  First Author,\afn{a}
+  Second Author,\afn{a,\authfn{2}}
+  Third Author,\afn{b}
+  Fourth Final Author,\afn{a,b,\authfn{1}}
 }
-\makeatother
-\subtitle{$subtitle$}
-$endif$
-\author{${ by-author:_authors.tex()[\and ] }}
-\date{$date$}
+\affil{%
+  University Name, Faculty Group, Department, City, Country\afn{a};
+  Company Name, City, Country\afn{b}
+}
+%\date{$date$}
+\runningauthor{FirstAuthor \textit{et al.}}
+\runningtitle{Running Title}
+\equalcontrib{Third Author and Fourth Author contributed equally. First Author and Second Author contributed equally to this work. Author order was determined XXXXXX.}
+\papertype{Research Article}
