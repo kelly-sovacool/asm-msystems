@@ -21,19 +21,22 @@ contributes:
       urlcolor: blue
       fig-width: 6.5
       fig-height: 4.5
-      # This format use a bst file with natbib
       biblio-style: msystems
       cite-method: natbib
       # Set this below (`biblio-config: false`) if your cls already load a bst file
-      # biblio-config: false
+      biblio-config: false
       # Content to add in header that your format is using
       header-includes: |
         \usepackage{orcidlink}
         \definecolor{mypink}{RGB}{219, 48, 122}
+        \usepackage{blindtext}
+        \usepackage{chemformula}
+        \usepackage{siunitx}
       template-partials:
         # Add here the partials your format is using
-        - "partials/title.tex"
         - "partials/_authors.tex"
+        - "partials/before-body.tex"
+        - "partials/title.tex"
       format-resources:
         # Add here the resources required for the PDF rendering
         - asm.cls
@@ -41,10 +44,10 @@ contributes:
         - jabbrv.sty
         - jabbrv-ltwa-all.ldf
         - jabbrv-ltwa-en.ldf
-    html:
+    #html:
       # define default configuration for the html version of your format
-      number-sections: false
-      toc: true
-      theme: custom.scss
+      #number-sections: false
+      #toc: true
+      #theme: custom.scss
       # Use a CSL file to style (https://www.zotero.org/styles/)
-      csl: https://www.zotero.org/styles/american-society-for-microbiology
+      #csl: https://www.zotero.org/styles/american-society-for-microbiology
