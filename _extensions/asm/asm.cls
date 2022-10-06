@@ -8,7 +8,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{asm-article}[2020/02/06, v1.3]
+\ProvidesClass{asm}[2020/02/06, v1.3]
 
 \newif\if@reqslineno
 \DeclareOption{lineno}{\@reqslinenotrue}
@@ -201,10 +201,11 @@ Address correspondence to \@corraddress.\par
 \titlespacing*{\subsection}
 {\parindent}
 {0pt}{0.3em}
-% Disable \subsubsection, \paragraph, \subparagraph
-\let\subsubsection\relax
-\let\paragraph\relax
-\let\subparagraph\relax
+
+%% Disable \subsubsection, \paragraph, \subparagraph
+%\let\subsubsection\relax
+%\let\paragraph\relax
+%\let\subparagraph\relax
 
 %% Citations and References (page-width, 2 columns)
 \RequirePackage[numbers,round]{natbib}
