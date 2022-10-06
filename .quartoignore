@@ -2,8 +2,4 @@
 # but should not be in the downloaded bundle after `quarto use template`
 style-guide/
 clean.sh
-template*.log
-template*.tex
-template*.pdf
-asm.cls
-msystems.bst
+template.pdf
