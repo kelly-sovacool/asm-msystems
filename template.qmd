@@ -6,6 +6,7 @@ format:
     keep-tex: true
     classoption:
       - lineno
+    pdf-engine: pdflatex
 author:
   - name: John Doe
     affiliations:
@@ -23,36 +24,37 @@ author:
     affiliations:
       - Another Affiliation
 abstract: |
-  Research Articles have structured abstracts consisting of two sections with their own headings: "Abstract" and "Importance". Because the structured abstract will be published separately by abstracting services, it must be complete and understandable without reference to the text. The Abstract section should be no more than 250 words and should  concisely  summarize  the  basic  content  of  the  paper without presenting extensive experimental details.
+    Research Articles have structured abstracts consisting of two sections with their own headings; "Abstract" and "Importance". Because the structured abstract will be published separately by abstracting services, it must be complete and understandable without reference to the text. The Abstract section should be no more than 250 words and should  concisely  summarize  the  basic  content  of  the  paper without presenting extensive experimental details.
 importance: |
-  The Importance section should be no more than 150 words and should provide a nontechnical explanation of the significance of the study to the field. Avoid abbreviations and references, and indicate the specific organism under study. When it is essential to include a reference, use the format shown under "References" below.
+    The Importance section should be no more than 150 words and should provide a nontechnical explanation of the significance of the study to the field. Avoid abbreviations and references, and indicate the specific organism under study. When it is essential to include a reference, use the format shown under "References" below.
 keywords: |
     keyword 1, keyword 2, keyword 3.
 reference-section-title: References
 bibliography: bibliography.bib  
 ---
 
-Please read the [Instructions to Authors](https://journals.asm.org/journal/msystems/submission-review-process) carefully, or browse the [FAQs](https://journals.asm.org/journal/msystems/faq) for further details.
+\dropcap{P}lease read the [Instructions to Authors](https://journals.asm.org/journal/msystems/submission-review-process) carefully, or browse the [FAQs](https://journals.asm.org/journal/msystems/faq) for further details.
 
 # Introduction {#sec-intro}
 
 The introduction should supply sufficient background information to allow the reader to understand and evaluate the results of the present study without referring to previous publications on the topic. The introduction should also provide the hypothesis that was addressed or the rationale for the present study. Choose references carefully to provide the most salient background rather than an exhaustive review of the topic.
 
 ## Sectioning commands.
+
 Use `#` to get a first-level heading. You can use `##` to get a sub-heading. Further sectioning levels, such as `###`, etc., are ignored.
 
 Sections **must** be ordered as follows:
 
 - Abstract
 - Importance
--  Keywords
--  Introduction
--  Results
--  Discussion
--  Materials and Methods
--  Supplemental Material file list (where applicable)
--  Acknowledgments
--  References
+- Keywords
+- Introduction
+- Results
+- Discussion
+- Materials and Methods
+- Supplemental Material file list (where applicable)
+- Acknowledgments
+- References
 
 ## Citations and References.
 
@@ -119,6 +121,7 @@ The tabularx, booktabs and siunitx packages are loaded by asm-article.cls; see \
 \end{table}
 
 ## File types and formats.
+
 Illustrations may be continuous-tone images, line drawings, or composites. On initial submission, illustrations may be supplied as PDF files, with the legend on the same page, to assist review. At the modification stage, production quality digital files must be provided, along with text files for the legends. The legends are copyedited and typeset for final publication, not included as part of the figure itself.
 
 All graphics submitted with modified manuscripts should be grayscale or in the RGB color mode. Minimum resolution is 300 dpi for all file types. All images imported into a figure file must be at the correct resolution before they are placed in the file. (For instance, placing a 72-dpi image in a 300-dpi EPS file will not result in the placed image meeting the minimum requirements for file resolution.) Note that publication quality will not be improved by using a resolution higher than the minimum.
@@ -128,9 +131,8 @@ All graphics should be submitted at their intended publication size; that is, th
 - Maximum figure width: 6.875 inches (ca.~17.4 cm)
 - Maximum figure height: 9.0625 inches (23.0 cm)
 
-
-
 # Discussion
+
 The Discussion section should provide an interpretation of the results in relation to previously published work and to the experimental system at hand and should not contain extensive repetition of the Results section or reiteration of the introduction. In short papers, the Results and Discussion sections may be combined.
 
 \begin{equation}
@@ -158,7 +160,9 @@ The Materials and Methods section should include sufficient technical informatio
 
 A method or strain, etc., used in only one of several experiments reported in the paper may be described in the Results section or very briefly (one or two sentences) in a table footnote or figure legend. It is expected that the sources from whom the strains were obtained will be identified.
 
-**Availability of data and materials.** By publishing in mSystems, the authors agree that, subject to requirements or limitations imposed by local and/or U.S. Government laws and regulations, any materials and data that are reasonably requested by others are available from a publicly accessible collection or will be made available in a timely fashion, at reasonable cost, and in limited quantities to members of the scientific community for noncommercial purposes. Similarly, the authors agree to make available computer programs and/or code, originating in the authors’ laboratory, that is the only means of confirming the conclusions reported in the article but that is not available commercially. The program(s) and suitable documentation regarding its (their) use may be provided by any of the following means: (i) as a program transmitted via the Internet, (ii) as an Internet server-based tool, or (iii) as a compiled or assembled form on a suitable medium. The authors guarantee that they have the authority to comply with this policy either directly or by means of material transfer agreements through the owner. ASM asks authors to assert this in a “Data availability” paragraph, which should appear at the end of the Materials and Methods section (or at the end of the text) of their submitted manuscript.
+## Availability of data and materials. 
+
+By publishing in mSystems, the authors agree that, subject to requirements or limitations imposed by local and/or U.S. Government laws and regulations, any materials and data that are reasonably requested by others are available from a publicly accessible collection or will be made available in a timely fashion, at reasonable cost, and in limited quantities to members of the scientific community for noncommercial purposes. Similarly, the authors agree to make available computer programs and/or code, originating in the authors’ laboratory, that is the only means of confirming the conclusions reported in the article but that is not available commercially. The program(s) and suitable documentation regarding its (their) use may be provided by any of the following means: (i) as a program transmitted via the Internet, (ii) as an Internet server-based tool, or (iii) as a compiled or assembled form on a suitable medium. The authors guarantee that they have the authority to comply with this policy either directly or by means of material transfer agreements through the owner. ASM asks authors to assert this in a “Data availability” paragraph, which should appear at the end of the Materials and Methods section (or at the end of the text) of their submitted manuscript.
 
 Therefore, a condition of publication in mSystems is that authors make data fully available and without restriction, except in rare circumstances. Data availability will be confirmed prior to publication and must be provided during the modification stage, if not before. Furthermore, data must be made available, upon request, for peer review. See \href{https://journals.asm.org/open-data-policy}{Data Policy}.
 
@@ -176,9 +180,9 @@ Guidelines for supplemental material appear in the Instructions to Authors. This
 
 **FIG S3.** Supplemental file 3 is a figure that shows results related to the study, although the study stands on its own. This legend for the figure may include multiple sentences.
 
-**{TABLE S1.** Supplemental file 4 is a large table that shows results related to the study, although the study stands on its own. This legend for the table may include multiple sentences.
+**TABLE S1.** Supplemental file 4 is a large table that shows results related to the study, although the study stands on its own. This legend for the table may include multiple sentences.
 
-**{TABLE S2.** Supplemental file 5 is a complex table that shows results related to the study, although the study stands on its own. This legend for the supplemental material may include multiple sentences.
+**TABLE S2.** Supplemental file 5 is a complex table that shows results related to the study, although the study stands on its own. This legend for the supplemental material may include multiple sentences.
 
 
 # Acknowledgments
