@@ -144,14 +144,14 @@ Address correspondence to \@corraddress.\par
 \RequirePackage[runin]{abstract}
 \setlength{\absleftindent}{0pt}
 \setlength{\absrightindent}{0pt}
-\setlength{\abstitleskip}{-\parindent}
+\setlength{\abstitleskip}{0pt}
 \renewcommand{\abstractname}{ABSTRACT}
 \renewcommand{\abstractnamefont}{\bfseries\color{sectioncolor}\scshape}
 \renewcommand{\abstracttextfont}{\normalfont}
 \abslabeldelim{\quad}
 \appto\abstract{%
 \newenvironment{importance}
-  {\noindent{\abstractnamefont IMPORTANCE}\@bslabeldelim}{}
+  {\newline\noindent{\abstractnamefont IMPORTANCE}\@bslabeldelim}{}
 }
 
 \newcommand{\keywords}[1]{{\raggedright\textbf{\color{sectioncolor}KEYWORDS:}\hspace{0.3em}#1\par}\vspace{\baselineskip}}
