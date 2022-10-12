@@ -7,6 +7,7 @@ format:
     classoption:
       - lineno
     pdf-engine: pdflatex
+    indent: true
 author:
   - name: John Doe
     affiliations:
