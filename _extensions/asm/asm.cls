@@ -40,6 +40,8 @@
 
 \LoadClass[11pt]{article}
 
+\sloppy
+
 \newcommand{\jlogo}[1]{\def\@jlogo{#1}}
 \newcommand{\jname}[1]{\def\@jname{#1}}
 \newcommand{\jyear}[1]{\def\@jyear{#1}}
@@ -151,7 +153,7 @@ Address correspondence to \@corraddress.\par
 \abslabeldelim{\quad}
 \appto\abstract{%
 \newenvironment{importance}
-  {\noindent{\abstractnamefont IMPORTANCE}\@bslabeldelim}{}
+  {\newline\noindent{\abstractnamefont IMPORTANCE}\@bslabeldelim}{}
 }
 
 \newcommand{\keywords}[1]{{\raggedright\textbf{\color{sectioncolor}KEYWORDS:}\hspace{0.3em}#1\par}\vspace{\baselineskip}}
