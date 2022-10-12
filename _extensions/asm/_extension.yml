@@ -15,7 +15,6 @@ contributes:
         opts_chunk:
           echo: false
     pdf:
-      # define default configuration for the pdf version of your format
       documentclass: asm
       colorlinks: true
       urlcolor: blue
@@ -23,22 +22,15 @@ contributes:
       fig-height: 4.5
       biblio-style: msystems
       cite-method: natbib
-      # Set this below (`biblio-config: false`) if your cls already load a bst file
-      biblio-config: false
-      # Content to add in header that your format is using
-      header-includes: |
-        \usepackage{orcidlink}
-        \definecolor{mypink}{RGB}{219, 48, 122}
-        \usepackage{blindtext}
-        \usepackage{chemformula}
-        \usepackage{siunitx}
+      biblio-config: false # cls already loads bst file
+      include-in-header:
+        - include-in-header.tex
       template-partials:
-        # Add here the partials your format is using
-        - "partials/_authors.tex"
-        - "partials/before-body.tex"
-        - "partials/title.tex"
+        - partials/_authors.tex
+        - partials/title.tex
+        - partials/before-body.tex
+        - partials/graphics.tex
       format-resources:
-        # Add here the resources required for the PDF rendering
         - asm.cls
         - msystems.bst
         - jabbrv.sty

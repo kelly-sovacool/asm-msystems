@@ -36,6 +36,15 @@ bibliography: bibliography.bib
 
 \dropcap{P}lease read the [Instructions to Authors](https://journals.asm.org/journal/msystems/submission-review-process) carefully, or browse the [FAQs](https://journals.asm.org/journal/msystems/faq) for further details.
 
+
+\begin{figure}[tp!]
+\begin{fullwidth}
+\includegraphics[width=\linewidth]{style-guide/example-image-16x9.png}
+\caption{This is an example figure with caption. Use the fullwidth environment to make it span the entire width of the page. Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+\label{fig:example}
+\end{fullwidth}
+\end{figure}
+
 # Introduction {#sec-intro}
 
 The introduction should supply sufficient background information to allow the reader to understand and evaluate the results of the present study without referring to previous publications on the topic. The introduction should also provide the hypothesis that was addressed or the rationale for the present study. Choose references carefully to provide the most salient background rather than an exhaustive review of the topic.
