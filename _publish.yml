@@ -1,0 +1,4 @@
+- source: template.qmd
+  quarto-pub:
+    - id: 828d4de3-6dc6-4f73-b758-3517e8b8d3ff
+      url: 'https://kelly-sovacool.quarto.pub/asm-msystems/'
