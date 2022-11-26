@@ -50,8 +50,6 @@
 \newcommand{\jpages}[1]{\def\@jpages{#1}}
 \newcommand{\jwebsite}[1]{\def\@jwebsite{#1}}
 
-
-\newcommand{\affil}[1]{\def\@affil{#1}}
 \newcommand{\runningauthor}[1]{\def\@runningauthor{#1}}
 \newcommand{\runningtitle}[1]{\def\@runningtitle{#1}}
 \newcommand{\corraddress}[1]{\def\@corraddress{#1}}
@@ -100,17 +98,6 @@ marginparwidth=2.15in,marginparsep=0.2in]{geometry}
 \newenvironment{fullwidth}{\begin{adjustwidth}{}{-2.35in}}{\end{adjustwidth}}
 
 %% Title and author block
-\newcommand{\afn}[1]{\textsuperscript{#1}}
-
-\RequirePackage{alphalph}
-\newalphalph{\fnsymbolmult}[mult]{\@fnsymbol}{5}
-
-\newcounter{authorfn}
-\setcounter{authorfn}{1}
-\newcommand{\authfn}[1]{%
-  \fnsymbolmult{#1}%
-}
-
 
 \newcommand{\infobox}{%
 \begin{mdframed}%
@@ -129,15 +116,21 @@ Address correspondence to \@corraddress.\par
 \end{mdframed}
 }
 
+\RequirePackage{authblk}
+\renewcommand\Authfont{\bfseries}
+\renewcommand\Affilfont{\normalfont\scriptsize}
+\setlength{\affilsep}{0.3em}
+\newcommand{\corrauthor}[2][]{\affil[#1]{Correspondence: #2}}
 \renewcommand{\maketitle}{%
   \null\vskip2\baselineskip%
   {\noindent\bfseries\raggedright\huge\@title\par}
   \vskip2\baselineskip
-  {\noindent\raggedright\bfseries\@author\par}%
-  {\noindent\raggedright\scriptsize%
-  \marginpar{\vskip-1em\infobox}%
-  \@affil\par%
-  %% v1.3: More co-first authorship below affiliations.
+  {\noindent\bfseries\raggedright\normalfont
+  \@author
+  \par}
+  {\noindent\raggedright\scriptsize
+  \@affil
+  \par
   \ifdefstring{\@equalcontrib}{}{}{\@equalcontrib\par}}%
   \thispagestyle{firstpage}%
 }
