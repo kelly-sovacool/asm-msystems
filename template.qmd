@@ -8,22 +8,34 @@ format:
       - lineno
     pdf-engine: pdflatex
     indent: true
+runningtitle: Running Title
+runningauthor: FirstAuthor
+papertype: Research Article
+equalcontrib: First Author and Second Author contributed equally to this work. Author order was determined XXXXXX.
 author:
-  - name: John Doe
+  - name: First Author
     affiliations:
-      - name: Dummy org
-        department: Cool Dep
-        address: Somewhere
-        city: Magic city
-        country: best one
-        postal-code: 9999
-      - Demo Journal
+      - ref: a
     orcid: 0000-0000-0000-0000
-    email: JD@example.org
-    url: https://example.org/
-  - name: his friend
+    equal-contributor: true
+  - name: Second Author
     affiliations:
-      - Another Affiliation
+      - ref: a
+    equal-contributor: true
+  - name: Third Author
+    affiliations:
+      - ref: b
+  - name: Third Final Author
+    affiliations:
+      - ref: a
+      - ref: b
+    email: fourth@author.edu
+    corresponding: true
+affiliations:
+  - id: a
+    name: University Name, Faculty Group, Department, City, Country
+  - id: b
+    name: Company Name, City, Country
 abstract: |
     Research Articles have structured abstracts consisting of two sections with their own headings; "Abstract" and "Importance". Because the structured abstract will be published separately by abstracting services, it must be complete and understandable without reference to the text. The Abstract section should be no more than 250 words and should  concisely  summarize  the  basic  content  of  the  paper without presenting extensive experimental details.
 importance: |

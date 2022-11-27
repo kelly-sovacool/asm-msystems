@@ -111,7 +111,7 @@ marginparwidth=2.15in,marginparsep=0.2in]{geometry}
 \setlength{\parskip}{0.5em}%
 \textbf{Compiled} \today\\
 This is a draft manuscript, pre-submission\par
-Address correspondence to \@corraddress.\par
+\textsuperscript{\textdagger}Address correspondence to \@corraddress.\par
 \ifdefstring{\@presentaddress}{}{}{\@presentaddress\par}
 \end{mdframed}
 }
@@ -120,7 +120,7 @@ Address correspondence to \@corraddress.\par
 \renewcommand\Authfont{\bfseries}
 \renewcommand\Affilfont{\normalfont\scriptsize}
 \setlength{\affilsep}{0.3em}
-\newcommand{\corrauthor}[2][]{\affil[#1]{Correspondence: #2}}
+%\newcommand{\corrauthor}[2][]{\affil[#1]{Correspondence: #2}}
 \renewcommand{\maketitle}{%
   \null\vskip2\baselineskip%
   {\noindent\bfseries\raggedright\huge\@title\par}
