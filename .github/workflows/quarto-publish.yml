@@ -1,0 +1,22 @@
+name: Render and deploy quarto files
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  quarto-render-and-deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Quarto
+      uses: quarto-dev/quarto-actions/setup@v2
+      with:
+        tinytex: true 
+    - name: Render and Publish
+      uses: quarto-dev/quarto-actions/publish@v2
+      with:
+        target: quarto-pub
